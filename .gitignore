@@ -30,8 +30,8 @@
 *.exe
 *.out
 *.app
-
-
 .vscode
+
+
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#C++
