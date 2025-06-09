@@ -1,0 +1,81 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define lli long long int
+#define ll long long int
+#define MOD 3000017
+vector<long long int> factorial;
+ll power(ll a, ll b, ll mod) {
+    ll x = 1, y = a;
+    while (b > 0) {
+        if (b % 2) {
+        x = (x*y) % mod;
+        }
+        y = (y*y) % mod;
+        b /= 2;
+    }
+    return x % mod;
+}
+ll modular_inverse(ll n, ll mod) {
+    return power(n, mod - 2, mod);
+}
+ll nCr(ll n, ll k, ll mod) {
+    return (factorial[n] * ((modular_inverse(factorial[k], mod) * modular_inverse(
+    factorial[n - k], mod)) % mod)) % mod;
+}
+void precomputarDynamique(lli objective) {
+    long long int factActual = factorial[factorial.size() - 1];
+
+    for (int i = factorial.size(); i < objective + 2; ++i) {
+        factActual = (factActual * i) % MOD;
+        factorial.push_back(factActual);
+    }
+}
+
+lli distribuer(lli groupes, lli contenu)
+{
+    groupes--;
+    return nCr(groupes+contenu, groupes, MOD);
+}
+
+lli main2(lli n)
+{
+    lli sol = 1; //No movement
+    for (lli height = 1; height <= n / 2 + 4; height++)
+    {
+        for (lli nWaves = 1; n - 2 * height * nWaves >= 2 * nWaves - 1; nWaves++)
+        {
+            //lli groupes = 2 * nWaves + 1;
+            //lli contenu = n - 2 * height * nWaves - (2 * nWaves - 1);
+            precomputarDynamique(n-2*height*nWaves+1);
+            sol += nCr(n-2*height*nWaves+1, 2*nWaves, MOD);
+            sol %= MOD;
+        }
+    }
+    return sol;
+}
+
+int main()
+{
+    factorial.push_back(1);
+    int n; cin >> n;
+    cout << main2(n) << "\n";
+    /*for (int i = 1; i <= 40; i++)
+    {
+        cout << i << ":" << main2(i) << "\n";
+    }
+    for (int i = 10; i <= 19; i++)
+    {
+        cout << "[";
+        for (int j = 0; j <= 9; j++)
+        {
+            cout << main2(i+j) << ",";
+        }
+        cout << "]\n";
+    }
+    for (int i = 20; i <= 29; i++)
+    {
+        cout << main2(i) << ",";
+    }
+    cout << "\n";*/
+    return 0;
+}

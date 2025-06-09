@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"c:\\Users\\sakko\\Desktop\\Codeforces\\Kaktis_SU\\A.py","tests":[{"id":1728716601241,"input":"3\nArnar\nBjarki\nBernhard\n","output":"Takk Arnar\nTakk Bjarki\nTakk Bernhard\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sakko\\Desktop\\Codeforces\\Kaktis_SU\\A.py","group":"local","local":true}

@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "utility": "cpp",
+        "format": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "algorithm": "cpp",
+        "iterator": "cpp",
+        "xhash": "cpp",
+        "xmemory": "cpp",
+        "xutility": "cpp",
+        "limits": "cpp",
+        "ostream": "cpp",
+        "cstdlib": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "bitset": "cpp",
+        "set": "cpp",
+        "xlocale": "cpp",
+        "initializer_list": "cpp"
+    }
+}

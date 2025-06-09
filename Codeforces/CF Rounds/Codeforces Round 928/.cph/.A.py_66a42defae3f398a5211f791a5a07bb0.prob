@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"c:\\Users\\sakko\\Desktop\\CF\\Codeforces Round 928\\A.py","tests":[{"id":1708353358485,"input":"8\nABABB\nABABA\nBBBAB\nAAAAA\nBBBBB\nBABAA\nAAAAB\nBAAAA\n","output":"B\nA\nB\nA\nB\nA\nA\nA\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sakko\\Desktop\\CF\\Codeforces Round 928\\A.py","group":"local","local":true}

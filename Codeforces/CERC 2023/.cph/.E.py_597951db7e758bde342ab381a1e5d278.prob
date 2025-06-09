@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"c:\\Users\\sakko\\Desktop\\CF\\CERC 2023\\E.py","tests":[{"id":1707398467161,"input":"0 3 fdejoyug\n3 9 qfcwiqtd\n9 10 qfcwiqtd\n------\n0 2 xwxlkskb\n2 4 fdejoyug\n4 10 tvqdeipf\n======","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sakko\\Desktop\\CF\\CERC 2023\\E.py","group":"local","local":true}
